@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'
+import Tooltip from './Tooltip';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="styl-50 tc styl-5">
+        <h1>Welcome to ToolTip Components</h1>
+      </div>
+      <div className="styl-50 tc">
+        <div className="styl-3">
+          <Tooltip position="top" />
+        </div>
+
+        <div className="styl-3">
+          <Tooltip position="left" />
+        </div>
+
+        <div className="styl-3">
+          <Tooltip position="right" />
+        </div>
+
+        <div className="styl-3">
+          <Tooltip position="bottom" />
+        </div>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
